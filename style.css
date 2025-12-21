@@ -28,3 +28,9 @@ button:hover {
   border-color: white;
 }
 
+#scene-image {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #222;
+}
+
