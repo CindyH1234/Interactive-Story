@@ -92,7 +92,7 @@ const story = {
 
   ending5: {
     text: "A passing nurse spots you running with crutches!! The commotion draws his attention towards you. In a moment of panic, you take off running for him to catch before you reach safety.You were strangled to death\n\nENDING 5: Strangled.",
-    image: "images/death.JPG"
+    image: "images/death.JPG",
     ending: true
   },
 
