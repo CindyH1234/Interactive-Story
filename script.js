@@ -27,32 +27,89 @@ const story = {
   Disguise: {
     text: "You find a pair of crutches and some bandages.",
     choices: [
-      { text: "You disguise yourself as a teen with a broken leg", next: "ending2" }
+      { text: "You disguise yourself as a teen with a broken leg", next: "Walk" }
     ]
   },
 
   Room: {
-    text: "The door locks itself from the other side.",
+    text: "You hide in the room and lock the door",
     choices: [
-      { text: "Scream", next: "ending3" }
+      { text: "Pray", next: "ending3" }
     ]
   },
 
+   Stairs: {
+    text: "You run down the stairs and make it to the ground floor. You...",
+    choices: [
+      { text: "Run out of the front door", next: "ending2" }
+      { text: "Run out of the back door", next: "ending4" }
+    ]
+  },
+    
+  Walk: {
+    text: "You successfully walk past him",
+    choices: [
+      { text: "Change Disguises", next: "Nurse" }
+      { text: "Forget it, Just Run", next: "Stopped" }
+    ]
+  },
+
+    Nurse: {
+    text: "You discreetly enter the changing room and find a spare nurse uniform",
+    choices: [
+      { text: "Wear the uniform", next: "Escape" }
+    ]
+  },
+  
+    Stopped: {
+    text: "A passing nurse recognizes you and calls out to you. The attacker is drawn to the commotion.",
+    choices: [
+      { text: "RUNN!!", next: "Ending5" }
+    ]
+    },
+
+    Escape: {
+    text: "You managed to escape as a nurse going on lunch break",
+    choices: [
+      { text: "Call 911 and leave the area", next: "Ending6" }
+    ]
+  },
+      
   // ENDINGS
+     
+},   
   ending1: {
-    text: "You charged towards him only to be disarmed and killed.\n\nENDING 1: You died",
+    text: "You charge at him and are disarmed.\n\nENDING 1: You died",
     ending: true
+    ]
   },
 
   ending2: {
-    text: "You walk until the house swallows you.\n\nENDING 2: Lost",
+    text: "Your attacker brought his buddies.\n\nENDING 1: You were beaten to death",
     ending: true
   },
+  
 
   ending3: {
-    text: "No one hears you.\n\nENDING 3: Trapped",
+    text: "He hears your frantic breaths through the door. He waits outside for you to come out on you own like a hunter teasing it's prey\n\nENDING 3: Trapped",
     ending: true
-  }
+  },
+    
+  ending4: {
+    text: "You escape through the backdoor, leaving the attacker too far behind to chase after you.\n\nENDING 4: You survived..barely",
+    ending: true
+    
+  },
+  
+    ending5: {
+    text: "Your Attacker is faster than you. He catches you and strangles you to death.\n\nENDING 4: Strangled to death",
+    ending: true
+    }, 
+
+  Ending6: {
+    text: "You call the police and they arrest the criminals. \n\nEnding 6: Succesfully escaped",
+    ending: true
+  },
 };
 
 // This function displays the current scene
