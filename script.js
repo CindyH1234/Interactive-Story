@@ -1,4 +1,3 @@
-// This object holds the entire story
 const story = {
   start: {
     text: "You wake up in a hospital room. Your attacker has tracked you here. What do you do?",
@@ -73,7 +72,7 @@ const story = {
     choices: [
       { text: "Call 911 and leave the area", next: "Ending6" }
     ]
-  },
+  };
       
   // ENDINGS
      
