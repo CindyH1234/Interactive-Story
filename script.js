@@ -11,6 +11,7 @@ const story = {
 
   Run: {
     text: "You find yourself pressed for time. He's near... You choose to...",
+    image: "images/hallway.WEBP",
     choices: [
       { text: "Hide in a room", next: "Room" },
       { text: "Run down the stairs", next: "Stairs" }
@@ -33,6 +34,7 @@ const story = {
 
   Room: {
     text: "You hide in the room and lock the door.",
+    image: "images/hallway.WEBP",
     choices: [
       { text: "Pray", next: "ending3" }
     ]
@@ -40,6 +42,7 @@ const story = {
 
   Stairs: {
     text: "You run down the stairs and reach the ground floor.",
+    image: "images/stairwell.PNG",
     choices: [
       { text: "Run out the front door", next: "ending2" },
       { text: "Run out the back door", next: "ending4" }
@@ -55,7 +58,8 @@ const story = {
   },
 
   Nurse: {
-    text: "You find a spare nurse uniform.",
+    text: "You make your way to the changing room and find a spare nurse uniform.",
+    image: "images/changingroom.JPG",
     choices: [
       { text: "Wear the uniform", next: "ending6" }
     ]
@@ -64,31 +68,37 @@ const story = {
   // ENDINGS
   ending1: {
     text: "You charge at him and are disarmed.\n\nENDING 1: You died.",
+    image: "images/death.JPG",
     ending: true
   },
 
   ending2: {
     text: "Your attacker brought his buddies.\n\nENDING 2: You were beaten to death.",
+    image: "images/death.JPG",
     ending: true
   },
 
   ending3: {
     text: "He waits outside the door like a predator.\n\nENDING 3: Trapped.",
+     image: "images/trapped.jpg",
     ending: true
   },
 
   ending4: {
     text: "You escape through the back door.\n\nENDING 4: You survived… barely.",
+    image: "images/door.JPG",
     ending: true
   },
 
   ending5: {
-    text: "He catches you before you reach safety.\n\nENDING 5: Strangled.",
+    text: "A passing nurse spots you running with crutches!! The commotion draws his attention towards you. In a moment of panic, you take off running for him to catch before you reach safety.You were strangled to death\n\nENDING 5: Strangled.",
+    image: "images/death.JPG"
     ending: true
   },
 
   ending6: {
-    text: "You call the police and escape safely.\n\nENDING 6: Freedom.",
+    text: "You make your way out of the hospital succesfully. You call the police and escape safely.\n\nENDING 6: Freedom.",
+    image: "images/nurse.JPG",
     ending: true
   }
 };
