@@ -1,3 +1,4 @@
+console.log("NEW SCRIPT LOADED");
 const story = {
   start: {
     text: "You wake up in a hospital room. Your attacker has tracked you here. What do you do?",
