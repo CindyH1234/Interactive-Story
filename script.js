@@ -108,9 +108,17 @@ function showNode(nodeKey) {
   const node = story[nodeKey];
   const textEl = document.getElementById("text");
   const choicesEl = document.getElementById("choices");
+  const imageEl = document.getElementById("scene-image");
 
   textEl.innerText = node.text;
   choicesEl.innerHTML = "";
+
+  if (node.image) {
+    imageEl.src = node.image;
+    imageEl.style.display = "block";
+  } else {
+    imageEl.style.display = "none";
+  }
 
   if (node.ending) {
     const btn = document.createElement("button");
@@ -127,6 +135,7 @@ function showNode(nodeKey) {
     choicesEl.appendChild(btn);
   });
 }
+
 
 // Start game
 showNode("start");
