@@ -2,6 +2,7 @@ console.log("NEW SCRIPT LOADED");
 const story = {
   start: {
     text: "You wake up in a hospital room. Your attacker has tracked you here. What do you do?",
+    image: "images/hospitalroom.WEBP",
     choices: [
       { text: "Get it over with. Charge at him.", next: "Charge" },
       { text: "Run away, think later", next: "Run" },
@@ -28,7 +29,7 @@ const story = {
   Disguise: {
     text: "You find a pair of crutches and some bandages.",
     choices: [
-      { text: "Disguise yourself as injured", next: "Walk" }
+      { text: "Put on your disguise", next: "Walk" }
     ]
   },
 
